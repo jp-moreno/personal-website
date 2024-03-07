@@ -1,0 +1,51 @@
+.main-container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+    display:flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        width: 95%; 
+        padding: 15px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container {
+        width: 100%; 
+        padding: 10px; 
+    }
+}
+
+.animation-container{
+	width: 100%;
+}
+
+.text-container {
+	overflow: hidden; /* Hide overflow */
+	float: left;
+	border-right: .15em solid black; /* Cursor effect */
+	white-space: nowrap; /* Prevent line breaks */
+	margin: 0 auto;
+	letter-spacing: .15em; /* Adjust letter spacing for natural feel */
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* Keyframes for the blinking cursor */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: black; }
+}
+
+
