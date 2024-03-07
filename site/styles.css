@@ -29,11 +29,11 @@
 .text-container {
 	overflow: hidden; /* Hide overflow */
 	float: left;
-	border-right: .15em solid black; /* Cursor effect */
+	border-right: .15em solid white; /* Cursor effect */
 	white-space: nowrap; /* Prevent line breaks */
 	margin: 0 auto;
 	letter-spacing: .15em; /* Adjust letter spacing for natural feel */
-	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end 3.5;
 }
 
 /* Keyframes for the typing animation */
