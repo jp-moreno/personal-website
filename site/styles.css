@@ -5,13 +5,19 @@
     padding: 20px;
     box-sizing: border-box; 
     display:flex;
-    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+.info-container {
+	flex-direction: column;
+	padding: 30px;
 }
 
 @media only screen and (max-width: 768px) {
     .main-container {
         width: 95%; 
         padding: 15px; 
+	flex-direction: column;
     }
 }
 
@@ -19,33 +25,43 @@
     .main-container {
         width: 100%; 
         padding: 10px; 
+	flex-direction: column;
     }
 }
 
-.animation-container{
-	width: 100%;
+#main-picture{
+	max-width: 400px;
 }
 
-.text-container {
-	overflow: hidden; /* Hide overflow */
-	float: left;
-	border-right: .15em solid white; /* Cursor effect */
-	white-space: nowrap; /* Prevent line breaks */
-	margin: 0 auto;
-	letter-spacing: .15em; /* Adjust letter spacing for natural feel */
-	animation: typing 3.5s steps(40, end), blink-caret .75s step-end 3.5;
+.social-media {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
 }
 
-/* Keyframes for the typing animation */
-@keyframes typing {
-	from { width: 0 }
-	to { width: 100% }
+.social-media ul {
+    list-style-type: none;
 }
 
-/* Keyframes for the blinking cursor */
-@keyframes blink-caret {
-	from, to { border-color: transparent }
-	50% { border-color: black; }
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
+.social-media li:first-child {
+    margin-left: 0;
+}
 
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+.social-media a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: #666;
+}
