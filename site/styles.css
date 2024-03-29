@@ -6,29 +6,13 @@
     box-sizing: border-box; 
     display:flex;
     background-color: #f4f4f4;
+    border-radius: 20px;
 }
 
 .info-container {
 	flex-direction: column;
 	padding: 30px;
 }
-
-@media only screen and (max-width: 768px) {
-    .main-container {
-        width: 95%; 
-        padding: 15px; 
-	flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .main-container {
-        width: 100%; 
-        padding: 10px; 
-	flex-direction: column;
-    }
-}
-
 #main-picture{
 	max-width: 400px;
 }
@@ -65,3 +49,39 @@
 .social-media a:hover {
     color: #666;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        width: 95%; 
+        padding: 15px; 
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+    }
+    .social-media {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container {
+        width: 100%; 
+        padding: 10px; 
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    }
+
+    .social-media {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    }
+}
+
+
