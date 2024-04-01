@@ -1,3 +1,8 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 .main-container {
     width: 90%; 
     max-width: 1200px; 
@@ -54,7 +59,7 @@
 @media only screen and (max-width: 768px) {
     .main-container {
         width: 95%; 
-        padding: 15px; 
+        padding: 0px 15px; 
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
@@ -70,7 +75,7 @@
 @media only screen and (max-width: 480px) {
     .main-container {
         width: 100%; 
-        padding: 10px; 
+        padding: 0px 10px; 
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
