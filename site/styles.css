@@ -1,92 +1,93 @@
 html, body {
-    padding: 0;
-    margin: 0;
-    border: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
+
 .main-container {
-    width: 90%; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px;
-    box-sizing: border-box; 
-    display:flex;
-    background-color: #f4f4f4;
-    border-radius: 20px;
+	width: 90%; 
+	max-width: 1200px; 
+	margin: 0 auto; 
+	padding: 20px;
+	box-sizing: border-box; 
+	display:flex;
+	background-color: #f4f4f4;
+	border-radius: 20px;
 }
 
 .info-container {
 	flex-direction: column;
 	padding: 30px;
 }
+
 #main-picture{
 	max-width: 400px;
 }
 
 .social-media {
-    padding: 0px;
-    margin: 0px;
-    text-align: left;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
 }
 
 .social-media ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 .social-media li {
-    display: inline-block;
-    margin-right: 10px;
+	display: inline-block;
+	margin-right: 10px;
 }
 
 .social-media li:first-child {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .social-media li:last-child {
-    margin-right: 0;
+	margin-right: 0;
 }
 
 .social-media a {
-    color: #333;
-    text-decoration: none;
-    font-size: 20px;
+	color: #333;
+	text-decoration: none;
+	font-size: 20px;
 }
 
 .social-media a:hover {
-    color: #666;
+	color: #666;
 }
 
-
 @media only screen and (max-width: 768px) {
-    .main-container {
-        width: 95%; 
-        padding: 0px 15px; 
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-    }
-    .social-media {
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-    }
+	.main-container {
+		width: 95%; 
+		padding: 0px 15px; 
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	.social-media {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 480px) {
-    .main-container {
-        width: 100%; 
-        padding: 0px 10px; 
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-    }
+	.main-container {
+		width: 100%; 
+		padding: 0px 10px; 
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .social-media {
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-    }
+	.social-media {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 
